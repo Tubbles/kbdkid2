@@ -1,12 +1,29 @@
-# KBDKID
+# KBDKID2
 
-![KBDKID](kbdkid.png "KBDKID")
+![KBDKID2](img/kbdkid.png "KBDKID2")
 
 ## Info
-Caps lock is bound to the mouse layer (hyper layer)\
-Tip: Open the json file in qmk online configurator\
-Find out how to make it wireless?\
-The switch LEDs are actually not visible through the caps, so they are completely unnessecary to solder in and actually makes it harder to desolder the switches
+This is my second attempt at a keyboard. This time I will learn from the mistakes of the old one
+and attempt to make a low profile, using Kailh Choc V2 switches (god help me). It will require
+a custom PCB, (maybe?) custom plate, and the stab situation is probably horrible..
+
+It is heavily based off of the GH60 board which has been rehacked into eg. the DZ60 (which the
+kbdkid1 is based off of). Doing so assures that all the measurements, placement of screws, etc.
+all are the same so that we can use off the shelf components such as plates, stabs and cases.
+
+PCB can be found [here](https://github.com/Tubbles/kbdkid2-pcb).
+
+Note that normal keycaps does not fit on these switches, they bottom out too low, so we need
+to go with eg. XDA, DSA, or similar "lower" caps.
+
+* Caps lock is bound to the mouse layer (hyper layer)
+* Tip: Open the json file in qmk online configurator
+* Find out how to make it wireless?
+
+### Second to bottom row from left to right
+| 1.25x  | 1x    | 10 x 1x     | 1.75x  | 1x    |
+| ------ | ----- | ----------- | ------ | ----- |
+| lshift | lpipe | normal keys | rshift | rctrl |
 
 ### Bottom row from left to right
 | 1.25x | 1.25x  | 1.25x | 2.25x | 1.25x | 2.75x | 1x    | 1x   | 1x   | 1x  | 1x    |
@@ -14,39 +31,40 @@ The switch LEDs are actually not visible through the caps, so they are completel
 | lctrl | lsuper | lmeta | lower | space | upper | rmeta | left | down | up  | right |
 
 ### Number of keycaps required
-| Size[U] | Amount | Keys                               |
-| ------- | ------ | ---------------------------------- |
-| 1x      | 51     | norms, left, down, up, right       |
-| 1.25x   | 4      | lctrl, lsuper, lmeta, space        |
-| 1.5x    | 2      | tab, backslash                     |
-| 1.75x   | 1      | caps lock (hyper, aka mouse layer) |
-| 2x      | 1      | backspace                          |
-| 2.25x   | 3      | enter, lshift, lower               |
-| 2.75x   | 2      | rshift, upper                      |
+| Size[U] | Amount | Keys                                        |
+| ------- | ------ | ------------------------------------------- |
+| 1x      | 53     | norms, left, down, up, right                |
+| 1.25x   | 5      | lctrl, lsuper, lmeta, lshift, space         |
+| 1.5x    | 2      | tab, rpipe                                  |
+| 1.75x   | 2      | rshift, caps lock (lhyper, aka mouse layer) |
+| 2x      | 1      | backspace                                   |
+| 2.25x   | 2      | enter, lower                                |
+| 2.75x   | 1      | upper                                       |
 
-Total number of keys: 64
+Total number of keys: 66
+
+## Example populated
+
+![populated](img/populated.png "populated")
 
 ## BOM
 ### Case
-* 60% WOOD CASE FOR DZ60 GH60 https://kbdfans.com/products/60-keyboard-wood-case?variant=40492079629 <- used
+*
 
 ### PCB
-* DZ60 REV 3.0 60% MECHANICAL KEYBOARD PCB https://kbdfans.com/products/dz60-60-pcb?variant=28607000739888 <- used
+* Custom (hot swap?) 60% USB-C
 
 ### Plate
-* DZ60 CNC (ALUMINUM/STEEL/BRASS) PLATE https://kbdfans.com/collections/plate/products/dz60-cnc-aluminum-plate?variant=2208864436237 <- used
+*
 
 ### Switch
-* ZealPC Zilent 62g
-* Cherry MX Red Silent 45g https://kbdfans.com/products/cherry-mx-silent-red?variant=20541726916666 <- used
+* Kailh Choc V2 Red https://kono.store/collections/switches/products/kailh-choc-mx-switches
 
 ### Stabs
-* PCB stabilizers black color https://kbdfans.com/collections/keyboard-stabilizer/products/pcb-stabilizers-black-color?variant=35974658637 <- used
+*
 
 ### Keycaps
-* PBT KT1 Profile Keycaps https://kbdfans.com/collections/keycaps/products/pbt-kt1-profile-keycaps-1
+* NP Electronic Game Keycaps Set https://kbdfans.com/collections/np-pg-da-profile/products/np-game-keycaps-set
 
 ### Accessories
 * Lube
-* F1.8mm LED 70PCS White https://kbdfans.com/collections/keyboard-part/products/f1-8mm-led-100pcs?variant=40117533581
-* USB-C TYPEC USB CABLE https://kbdfans.com/collections/usb-cable/products/usb-c-typec-usb-cable
